@@ -1,8 +1,7 @@
-import React from "react";
 
-function Search({ onSearch }) { // Receive onSearch as a prop
+function Search({ onSearch }) { 
   const handleChange = (e) => {
-    onSearch(e.target.value); // Call onSearch with the current input value
+    onSearch(e.target.value); 
   };
 
   return (
@@ -10,7 +9,7 @@ function Search({ onSearch }) { // Receive onSearch as a prop
       <input
         type="text"
         placeholder="Search your Recent Transactions"
-        onChange={handleChange} // Update to call handleChange
+        onChange={handleChange} 
       />
       <i className="circular search link icon"></i>
     </div>
@@ -18,21 +17,3 @@ function Search({ onSearch }) { // Receive onSearch as a prop
 }
 
 export default Search;
-
-
-// import React from "react";
-
-// function Search() {
-//   return (
-//     <div className="ui large fluid icon input">
-//       <input
-//         type="text"
-//         placeholder="Search your Recent Transactions"
-//         onChange={() => console.log("Searching...")}
-//       />
-//       <i className="circular search link icon"></i>
-//     </div>
-//   );
-// }
-
-// export default Search;
